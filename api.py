@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 @app.route('/hello_world', methods=['GET'])
-def hell_w():
+def sayHelloWorld():
     
     data ={
         1: "Hello World!"
@@ -23,12 +23,12 @@ def returnUsersInfo():
             'age': 20
         },
         2: {
-            'name': 'Mike',
+            'name': 'John',
             'age': 35
         },
         3: {
             'name': 'Oxmoul',
-            'age': 34
+            'age': 39
         }
     }
 
